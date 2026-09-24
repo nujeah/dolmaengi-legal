@@ -4,18 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e1420">
-  <meta name="description" content="한 손으로 돌을 두드려 99종을 모으는 한국어 모바일 게임. 돌멩이 - 99개의 돌 모으기. Android와 iPhone에서 만날 수 있습니다.">
+  <meta name="description" content="돌을 두드려 99종 도감을 채우는 모바일 수집 게임, 돌멩이 - 99개의 돌 모으기. Android Google Play에서 설치하고 첫 돌을 발견해 보세요.">
   <link rel="canonical" href="https://nujeah.github.io/dolmaengi-legal/play.html">
   <link rel="icon" type="image/png" href="stone-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="돌멩이 — 99개의 돌 모으기">
-  <meta property="og:description" content="두드리면 돌이 나온다. 아흔아홉 종을 모으는 한 손 게임.">
+  <meta property="og:title" content="돌멩이 99 | 두드리며 모으는 돌 수집 게임">
+  <meta property="og:description" content="돌을 두드리고 99종 도감을 채워 보세요. Android Google Play에서 시작할 수 있습니다.">
   <meta property="og:url" content="https://nujeah.github.io/dolmaengi-legal/play.html">
-  <meta property="og:image" content="https://nujeah.github.io/dolmaengi-legal/stone-icon.png">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
-  <title>돌멩이 — 99개의 돌 모으기</title>
+  <meta property="og:image" content="https://nujeah.github.io/dolmaengi-legal/share-android.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="돌멩이 99 게임 아이콘과 Android 돌 수집 게임 소개">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="돌멩이 99 | 두드리며 모으는 돌 수집 게임">
+  <meta name="twitter:description" content="돌을 두드리고 99종 도감을 채워 보세요. Android Google Play에서 시작할 수 있습니다.">
+  <meta name="twitter:image" content="https://nujeah.github.io/dolmaengi-legal/share-android.png">
+  <title>돌멩이 99 | 99종 돌 수집 게임 · Android 설치</title>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"돌멩이 - 99개의 돌 모으기","description":"돌을 두드려 99종 도감을 채우는 모바일 수집 게임","applicationCategory":"GameApplication","operatingSystem":"Android","inLanguage":"ko","url":"https://nujeah.github.io/dolmaengi-legal/play.html","downloadUrl":"https://play.google.com/store/apps/details?id=com.dolmaengi.dolmaengi","image":"https://nujeah.github.io/dolmaengi-legal/stone-icon.png"}
+  </script>
   <style>
     :root { color-scheme: dark; --bg:#0e1420; --panel:#1b2433; --line:#31465a; --text:#f3f6fb; --muted:#b5c4d4; --water:#3fd6e8; }
     * { box-sizing:border-box; }
@@ -36,14 +45,22 @@
     .store-buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; }
     .button { display:inline-flex; justify-content:center; align-items:center; min-width:205px; min-height:54px; padding:12px 18px; border:1px solid var(--water); border-radius:10px; background:var(--water); color:#0b1a22; font-size:16px; font-weight:800; text-decoration:none; transition:transform .16s,background .16s; }
     .button:hover,.button:focus-visible { background:#7de9f3; transform:translateY(-2px); }
-    .button.secondary { background:transparent; color:var(--text); border-color:#708496; }
-    .button.secondary:hover,.button.secondary:focus-visible { background:#25394b; }
     .note { color:var(--muted); font-size:13px; margin:18px 0 0; }
     .details { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0 0 65px; text-align:left; }
     .card { padding:24px; border:1px solid var(--line); border-radius:14px; background:#1b2433aa; }
     .card .num { color:var(--water); font-size:13px; font-weight:800; letter-spacing:.14em; }
     .card h2 { margin:12px 0 8px; font-size:20px; line-height:1.35; }
     .card p { margin:0; color:var(--muted); font-size:15px; word-break:keep-all; }
+    .screens { margin:0 0 64px; }
+    .screens h2,.contact h2 { margin:0 0 8px; font-size:25px; }
+    .screens .intro,.contact p { margin:0 auto 22px; max-width:680px; color:var(--muted); word-break:keep-all; }
+    .gallery { display:flex; justify-content:center; flex-wrap:wrap; gap:22px; }
+    .gallery figure { width:min(100%,265px); margin:0; }
+    .gallery img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:17px; }
+    .gallery figcaption { padding:10px 0 0; color:var(--muted); font-size:14px; }
+    .contact { max-width:700px; margin:0 auto 65px; padding:27px; border:1px solid var(--line); border-radius:14px; background:#1b2433aa; }
+    .contact p { margin-bottom:12px; }
+    .contact .email { font-weight:700; color:var(--water); }
     .invite { max-width:700px; margin:0 auto 74px; padding:28px; border:1px solid #3fd6e871; border-radius:14px; background:#12303b80; }
     .invite h2 { margin:0 0 8px; font-size:21px; }
     .invite p { margin:0; color:var(--muted); word-break:keep-all; }
@@ -70,14 +87,26 @@
         <p class="lead">돌 하나를 두드리고, 발견한 돌을 도감에 채워 보세요. 짧은 시간에도 이어서 즐길 수 있는 수집 게임입니다.</p>
         <div class="store-buttons">
           <a class="button" href="https://play.google.com/store/apps/details?id=com.dolmaengi.dolmaengi&amp;utm_source=landing&amp;utm_campaign=launch_202609_landing" rel="noopener noreferrer">Google Play에서 받기</a>
-          <a class="button secondary" href="https://apps.apple.com/kr/app/id6798122510" rel="noopener noreferrer">App Store에서 받기</a>
         </div>
-        <p class="note">Android · iPhone · 시작할 때 계정 로그인이 필요합니다.</p>
+        <p class="note">Android에서 시작할 때 계정 로그인이 필요합니다. iPhone 앱은 업데이트 점검 중이며, 확인 뒤 설치 링크를 다시 안내하겠습니다.</p>
       </section>
       <section class="details" aria-label="게임 소개">
         <div class="card"><span class="num">01</span><h2>한 손으로 두드리기</h2><p>화면의 돌을 두드리며 새로운 돌을 발견합니다.</p></div>
         <div class="card"><span class="num">02</span><h2>99종 도감 채우기</h2><p>발견한 돌을 기록하고, 하나씩 모아 갑니다.</p></div>
         <div class="card"><span class="num">03</span><h2>내 돌 진열하기</h2><p>모은 돌을 고르고 진열하며 나만의 기록을 남깁니다.</p></div>
+      </section>
+      <section class="screens" aria-labelledby="screens-title">
+        <h2 id="screens-title">게임 화면</h2>
+        <p class="intro">Google Play에 게시된 화면입니다. 수집 수치와 돌 보유 상태는 예시 계정의 기록입니다.</p>
+        <div class="gallery">
+          <figure><img src="game-home.png" alt="돌을 두드리는 게임 홈 화면" width="1440" height="2560" loading="lazy"><figcaption>화면 중앙의 돌을 두드려 발견하기</figcaption></figure>
+          <figure><img src="game-dex.png" alt="발견한 돌이 표시된 도감 화면" width="1440" height="2560" loading="lazy"><figcaption>발견한 돌을 도감에서 확인하기</figcaption></figure>
+        </div>
+      </section>
+      <section class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">게임 소개·문의</h2>
+        <p>돌멩이 99는 돌을 두드려 발견하고 99종 도감을 채워 가는 모바일 수집 게임입니다.</p>
+        <p>개발·보도 문의: <a class="email" href="mailto:univerfirm@gmail.com">univerfirm@gmail.com</a></p>
       </section>
       <section class="invite" aria-labelledby="invite-title">
         <h2 id="invite-title">친구와 함께 시작하기</h2>
@@ -87,7 +116,6 @@
         <p>당신의 첫 돌은 무엇일까요.</p>
         <div class="store-buttons">
           <a class="button" href="https://play.google.com/store/apps/details?id=com.dolmaengi.dolmaengi&amp;utm_source=landing&amp;utm_campaign=launch_202609_landing" rel="noopener noreferrer">Google Play에서 받기</a>
-          <a class="button secondary" href="https://apps.apple.com/kr/app/id6798122510" rel="noopener noreferrer">App Store에서 받기</a>
         </div>
       </section>
     </main>
