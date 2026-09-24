@@ -51,7 +51,7 @@
 
 <header>
   <h1>돌멩이 99 개인정보처리방침</h1>
-  <p class="dates">시행일 2026-08-15 · 최종 수정일 2026-08-07</p>
+  <p class="dates">시행일 2026-09-24 · 최종 수정일 2026-09-24</p>
 </header>
 
 <p class="lede">
@@ -61,8 +61,9 @@
 <p>
   본 게임의 이용에는 <strong>로그인이 필요합니다.</strong>
   <strong>카카오 계정 또는 Apple 계정</strong> 중 하나를 고르실 수 있습니다.
-  어느 쪽이든 제공받는 항목은 <strong>계정을 가리키는 식별자와 표시 이름뿐이며</strong>,
-  전화번호·주소 등 그 밖의 개인정보는 수집하지 않습니다.
+  로그인 제공자로부터 받는 항목은 계정을 가리키는 식별자와 표시 이름 관련 정보입니다.
+  선택형 구독을 이용하면 아래의 구독 처리 정보가 별도로 처리되고,
+  앱 이용 분석 기록도 수집합니다. 전화번호·주소는 수집하지 않습니다.
 </p>
 
 <h2>1. 수집하는 정보와 이용 목적</h2>
@@ -72,8 +73,8 @@
 <table>
   <tr><th style="width:22%">항목</th><th style="width:44%">내용</th><th>이용 목적</th></tr>
   <tr>
-    <td>익명 계정 식별자</td>
-    <td>앱 최초 실행 시 자동 발급되는 임의의 문자열(UID). 이용자의 실명·이메일과 무관합니다</td>
+    <td>계정 식별자</td>
+    <td>로그인한 계정과 게임 기록을 연결하는 임의의 문자열(UID)</td>
     <td>게임 기록의 저장·복원, 기기 간 이어하기</td>
   </tr>
   <tr>
@@ -86,6 +87,26 @@
     <td>터치 묶음, 획득 판정 결과, 판정 시드</td>
     <td>비정상 조작·매크로 방지</td>
   </tr>
+  <tr>
+    <td>앱 이용 분석 기록</td>
+    <td>Google Analytics for Firebase의 설치 식별자, 앱 계정 UID, 첫 플레이·실제 플레이·튜토리얼 완료·친구 초대 공유/수락 이벤트, 앱·기기 정보와 IP 기반 대략적 지역. 초대 코드·닉네임은 분석에 보내지 않음</td>
+    <td>활성 이용자·유입·기능 사용 측정과 이용 경험 개선</td>
+  </tr>
+  <tr>
+    <td>구독 처리 정보</td>
+    <td>앱 계정 식별자(Firebase UID), 스토어·상품 식별자, 구매·갱신·만료 상태와 시각, 구독 관리 URL</td>
+    <td>구매 복원, 구독 상태 확인과 혜택 제공, 첫 구독 보상의 중복 지급 방지</td>
+  </tr>
+  <tr>
+    <td>친구 초대 기록</td>
+    <td>6자리 초대 코드, 초대한 계정과 수락한 계정의 연결, 수락·보상 여부</td>
+    <td>초대 확인, 1회 보상 지급 및 중복 수령 방지</td>
+  </tr>
+  <tr>
+    <td>돌장터 거래 기록</td>
+    <td>거래 당사자 계정, 돌·가격·매물 및 요청 번호</td>
+    <td>중복 정산 방지, 거래 처리 확인과 분쟁·부정 이용 조사</td>
+  </tr>
 </table>
 </div>
 
@@ -95,14 +116,17 @@
   <tr><th style="width:22%">항목</th><th style="width:44%">내용</th><th>이용 목적</th></tr>
   <tr>
     <td>닉네임</td>
-    <td>이용자가 직접 정하는 표시 이름 (12자 이내, 선택 사항)</td>
-    <td>프로필·명예의 전당·랭킹 표시</td>
+    <td>이용자가 직접 정하는 표시 이름 (12자 이내)</td>
+    <td>프로필·명예의 전당·랭킹·돌장터 판매자 표시, 친구 초대 코드 확인</td>
   </tr>
 </table>
 </div>
 <div class="note">
   <strong>닉네임에는 실명·연락처 등 개인을 식별할 수 있는 정보를 입력하지 마시기 바랍니다.</strong>
   닉네임은 <strong>명예의 전당과 랭킹에서 다른 이용자에게 공개됩니다.</strong>
+  돌장터에서는 판매자의 닉네임 일부가 가려져 공개됩니다.
+  또한 로그인한 이용자가 유효한 친구 초대 코드를 입력하면, 수락 전에 해당 코드를
+  발급한 이용자의 닉네임이 공개됩니다.
 </div>
 
 <h3>1-3. 로그인 시 제공받는 정보</h3>
@@ -155,18 +179,23 @@
 <p>본 게임은 다음을 <strong>수집하지 않습니다.</strong></p>
 <ul>
   <li>생년월일, 전화번호, 주소 등 직접 식별 정보</li>
-  <li>위치 정보</li>
+  <li>GPS 등 정확한 위치 정보 (분석에는 IP 기반 대략적 지역이 포함될 수 있음)</li>
   <li>연락처, 사진, 파일 등 기기 내 저장 정보</li>
   <li>광고 식별자(ADID/IDFA)</li>
-  <li>이용 행태 분석(Analytics), 오류 수집(Crashlytics) 등 별도의 추적 도구</li>
+  <li>오류 수집(Crashlytics) 도구</li>
+  <li>카드번호, 계좌번호, 결제 비밀번호 등 결제수단 정보</li>
 </ul>
 
 <h2>2. 보유 및 이용 기간</h2>
 <div class="scroll">
 <table>
   <tr><th style="width:46%">항목</th><th>보유 기간</th></tr>
-  <tr><td>익명 계정 식별자, 게임 진행 기록</td><td>이용자가 삭제를 요청하거나 계정을 삭제할 때까지</td></tr>
+  <tr><td>계정 식별자, 게임 진행 기록</td><td>이용자가 삭제를 요청하거나 계정을 삭제할 때까지</td></tr>
+  <tr><td>친구 초대 기록</td><td>초대 코드·수락 연결 기록은 관련 계정이 삭제될 때 삭제하거나 연결을 알아볼 수 없게 처리. 이미 지급된 보상 상태는 보상을 받은 계정을 삭제할 때까지</td></tr>
   <tr><td>게임 검증 기록</td><td><strong>수집일로부터 90일</strong> 후 자동 삭제</td></tr>
+  <tr><td>앱 이용 분석 기록</td><td>Google Analytics 사용자·이벤트 단위 자료는 <strong>2개월</strong> 보관 설정. 집계 보고서는 별도로 보관될 수 있으며 삭제 요청 가능</td></tr>
+  <tr><td>돌장터 거래 기록</td><td><strong>거래 완료일로부터 90일</strong> 후 자동 삭제</td></tr>
+  <tr><td>구독 처리 정보</td><td>구독 제공과 분쟁 처리에 필요한 기간 및 관계 법령이 요구하는 기간. 스토어와 결제 처리 사업자의 보관 정책이 별도로 적용될 수 있음</td></tr>
   <tr><td>카카오 회원번호 또는 Apple 계정 식별자·이메일·이름</td><td>회원탈퇴하거나 삭제를 요청할 때까지</td></tr>
 </table>
 </div>
@@ -174,14 +203,16 @@
 
 <h2>3. 개인정보의 제3자 제공</h2>
 <p>
-  본 게임은 이용자의 개인정보를 <strong>제3자에게 제공하지 않습니다.</strong>
+  1조에 기재한 게임 내 닉네임 공개 외에, 본 게임은 이용자의 개인정보를
+  <strong>제3자에게 제공하지 않습니다.</strong>
   판매·대여하지 않으며, 광고 목적으로 이전하지 않습니다.
 </p>
 <p>법령에 따라 수사기관 등이 적법한 절차로 요구하는 경우에 한하여 제공할 수 있습니다.</p>
 <div class="note">
-  <strong>반대 방향은 있습니다.</strong> 로그인 시 본 게임이
+  <strong>로그인 정보는 반대 방향으로 제공받습니다.</strong> 로그인 시 본 게임이
   <strong>카카오 또는 Apple로부터</strong> 1-3의 항목을 제공받습니다.
-  본 게임이 그쪽으로 이용자 정보를 보내지는 않습니다.
+  로그인 처리를 위해 본 게임이 그쪽으로 이용자 정보를 보내지는 않습니다.
+  구독 결제와 처리 위탁에 관한 사항은 아래 4조에서 별도로 안내합니다.
   <br /><br />
   카카오 개인정보처리방침:
   <a href="https://www.kakao.com/policy/privacy">kakao.com/policy/privacy</a><br />
@@ -192,47 +223,76 @@
 <h2>4. 개인정보 처리의 위탁</h2>
 <div class="scroll">
 <table>
-  <tr><th style="width:30%">수탁자</th><th style="width:40%">위탁 업무</th><th>데이터 보관 위치</th></tr>
+  <tr><th style="width:22%">수탁자</th><th style="width:29%">위탁 업무</th><th style="width:31%">처리 정보</th><th>처리·보관 위치</th></tr>
   <tr>
     <td>Google LLC (Firebase)</td>
-    <td>익명 인증, 게임 기록 저장, 서버 검증</td>
+    <td>인증, 게임 기록 저장, 서버 검증</td>
+    <td>계정 식별자와 1조에 기재한 게임 기록</td>
     <td><strong>대한민국 서울 리전<br />(asia-northeast3)</strong></td>
+  </tr>
+  <tr>
+    <td>Google LLC (Google Analytics for Firebase)</td>
+    <td>앱 플레이·유입·기능 사용 통계</td>
+    <td>앱 계정 UID, 설치 식별자, 앱 이용 이벤트·기기 정보·대략적 지역</td>
+    <td>Google의 별도 분석 인프라<br />(서울 리전 보관 보장 없음)</td>
+  </tr>
+  <tr>
+    <td>RevenueCat, Inc.</td>
+    <td>인앱 구독 상태 확인, 구매 복원 및 구독 관리 연동</td>
+    <td>Firebase UID, 스토어·상품 식별자, 구매·갱신·만료 상태</td>
+    <td><strong>미국 소재 서비스 인프라</strong></td>
   </tr>
 </table>
 </div>
 <p>
-  데이터는 <strong>국내 리전에 저장</strong>되며, 수탁자는 위탁 목적 범위를 넘어 이용할 수 없습니다.
+  Firebase의 게임 원장은 <strong>국내 리전에 저장</strong>하지만 Google Analytics 자료는 별도
+  분석 인프라에서 처리될 수 있습니다. 구독 처리 정보는
+  이용자가 구독 화면을 이용하거나 구매·복원·상태 동기화를 요청할 때 암호화된 통신으로
+  RevenueCat과 Apple 또는 Google의 결제 인프라에서 국외 처리될 수 있습니다.
+  각 사업자는 위탁·결제 목적과 적용 정책 범위에서 이를 처리합니다.
 </p>
+<div class="note">
+  App Store 또는 Google Play가 결제를 처리하므로 본 게임은
+  <strong>카드번호·계좌번호 등 결제수단 정보를 직접 수집하거나 저장하지 않습니다.</strong>
+</div>
 <ul>
   <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   <li>Firebase 데이터 처리 조건: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>RevenueCat 개인정보처리방침: <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></li>
+  <li>RevenueCat 데이터 처리 조건: <a href="https://www.revenuecat.com/dpa">revenuecat.com/dpa</a></li>
 </ul>
 
 <h2>5. 이용자의 권리와 행사 방법</h2>
 <ul>
-  <li><strong>열람·정정</strong> — 게임 내 프로필 화면에서 진행 기록과 닉네임을 확인·수정</li>
-  <li><strong>초기화</strong> — 게임 내 <strong>프로필 → 기록 지우기</strong> (되돌릴 수 없습니다)</li>
-  <li><strong>회원탈퇴 (완전 삭제)</strong> — 게임 내 <strong>프로필 → 회원탈퇴</strong>. 계정과 서버 기록이 즉시 삭제됩니다</li>
+  <li><strong>열람</strong> — 게임 내 프로필 화면에서 진행 기록과 닉네임을 확인</li>
+  <li><strong>회원탈퇴 (완전 삭제)</strong> — 게임 내 <strong>프로필 → 회원탈퇴</strong> (되돌릴 수 없습니다)</li>
   <li><strong>완전 삭제 요청</strong> — 앱을 이미 지우셨다면 <a href="delete.html"><strong>삭제 요청 페이지</strong></a> 또는 아래 연락처로 요청</li>
 </ul>
-<p><strong>「기록 지우기」로 삭제되는 범위를 정확히 안내드립니다.</strong></p>
-<div class="scroll">
-<table>
-  <tr><th style="width:40%">대상</th><th style="width:30%">「기록 지우기」</th><th>완전 삭제 요청</th></tr>
-  <tr><td>기기 내부 저장 기록</td><td>즉시 삭제</td><td>&mdash;</td></tr>
-  <tr><td>서버의 게임 진행 저장본</td><td>초기화됨</td><td>삭제</td></tr>
-  <tr><td>서버의 보유 집계</td><td><strong>남습니다</strong></td><td>삭제</td></tr>
-  <tr><td>서버의 검증 기록</td><td><strong>남습니다</strong></td><td><strong>수집일로부터 90일</strong> 후 자동 삭제</td></tr>
-  <tr><td>카카오 또는 Apple 계정 연결 정보</td><td><strong>남습니다</strong></td><td>삭제</td></tr>
-  <tr><td>닉네임·랭킹 기록</td><td><strong>남습니다</strong></td><td>삭제</td></tr>
-  <tr><td>선구자 번호</td><td><strong>남습니다</strong> (설계상 영구 기록)</td><td>삭제</td></tr>
-</table>
+<p>
+  회원탈퇴 시 게임 저장본, 로그인 연결 정보, 닉네임, 랭킹 기록, 선구자 명부의 이름,
+  본인의 친구 초대 코드·수락 연결 기록·보상 상태, 게임 서버의 구독 상태와
+  <strong>「황금의 돌」</strong>을 삭제합니다. 상대방에게 이미 지급된
+  보상은 유지하되 탈퇴자와의 연결은 삭제하거나 알아볼 수 없게 처리합니다.
+  다만 게임 검증 기록과 돌장터 거래 기록은 각각 수집일 또는 거래 완료일로부터
+  <strong>90일간 보존한 뒤 자동 삭제</strong>합니다.
+</p>
+<p>
+  회원탈퇴 시 이 기기의 Analytics 식별자는 초기화합니다. 이미 전송된 분석 기록에는
+  위의 Google Analytics 보관 기간이 적용됩니다. 별도 삭제를 원하시면 아래 이메일로
+  요청할 수 있습니다.
+</p>
+<div class="note">
+  <strong>회원탈퇴는 App Store 또는 Google Play의 활성 구독을 자동으로 해지하지 않습니다.</strong>
+  갱신을 원하지 않으면 앱의 「구독 관리」 또는 스토어 구독 관리 화면에서 별도로 해지해야 합니다.
+  구독을 먼저 해지하지 않아도 게임 계정은 즉시 삭제할 수 있습니다.
+  RevenueCat과 스토어가 보유한 거래·구독 기록에는 각 사업자의 보관 정책이 적용됩니다.<br /><br />
+  구독 관리:
+  <a href="https://apps.apple.com/account/subscriptions">App Store</a> ·
+  <a href="https://play.google.com/store/account/subscriptions">Google Play</a>
 </div>
 <p>
-  앱 삭제만으로는 서버에 저장된 기록이 삭제되지 않습니다.
-  <strong>서버 기록까지 완전히 지우려면
-  <a href="delete.html">삭제 요청 페이지</a> 또는 아래 연락처로 요청해 주시기 바랍니다.</strong>
-  요청을 받으면 지체 없이 처리하며, 처리 결과를 회신합니다.
+  앱 삭제만으로는 서버 기록이 삭제되지 않습니다. 서버 기록까지 지우려면 앱의 회원탈퇴,
+  <a href="delete.html">삭제 요청 페이지</a> 또는 아래 연락처를 이용해 주시기 바랍니다.
 </p>
 
 <h2>6. 만 14세 미만 아동의 개인정보</h2>
@@ -277,7 +337,7 @@
   변경 시 앱 내 공지 또는 본 페이지를 통해 알려드립니다.
 </p>
 <p style="font-size:15px;color:#5b5f66">
-  <strong>작성 중 반영된 변경</strong> (최초 시행 전이므로 이력이 아니라 초안 수정입니다)<br />
+  <strong>주요 변경 내역</strong><br />
   2026-07-31 — 계정 연결 제공자를 Google에서 <strong>카카오</strong>로 변경.
   수집 항목을 이메일·표시 이름에서 <strong>회원번호·프로필 닉네임</strong>으로 정정.
   랭킹 기능에 따른 닉네임 공개 범위와 신고 처리를 명시. 삭제 요청 페이지를 신설.<br />
@@ -291,11 +351,20 @@
   이메일 주소와 이름을 받습니다(둘 다 가리거나 제공하지 않으실 수 있습니다).
   그래서 §1-3을 두 갈래로 나누고, §1-4의 「수집하지 않는 정보」에서
   <strong>「이름」을 뺐습니다</strong> — 받게 된 것을 안 받는다고 적어 두면
-  그 자리에서 거짓이 됩니다. 카카오로 로그인하시면 종전과 같습니다.
+  그 자리에서 거짓이 됩니다. 카카오로 로그인하시면 종전과 같습니다.<br />
+  2026-08-19 — <strong>친구 초대 기능을 추가.</strong> 6자리 초대 코드,
+  수락 연결과 보상 상태, 유효 코드 확인 시 표시 이름 공개, 보유·삭제 기준을 반영.<br />
+  2026-09-04 — 선택형 월간 자동 갱신 멤버십 <strong>「돌보는 사람」</strong>을 추가.
+  RevenueCat을 통한 구독 처리, 스토어 결제, 구매 복원, 회원탈퇴와 구독 해지의 분리,
+  첫 구독 보상 「황금의 돌」의 보유·삭제 기준을 반영.<br />
+  2026-09-24 — Google Analytics for Firebase의 실제 플레이·퍼널 분석 항목과
+  보유 기간, Google 처리 위치를 반영.
 </p>
 
 <footer>
-  돌멩이 99 · 개인정보처리방침
+  돌멩이 99 · 개인정보처리방침<br />
+  <a href="terms.html">이용약관</a> ·
+  <a href="delete.html">계정·데이터 삭제 요청</a>
 </footer>
 
 </div>
